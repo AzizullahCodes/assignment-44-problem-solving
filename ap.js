@@ -99,7 +99,7 @@ _____________________ Answer ________________________________________ */
 
 
 /*___________________________ Question no 10 ________________________
-
+bulb on off function
 _____________________ Answer ________________________________________ */
 // function offing(){let getBulb = document.getElementById('mainImg');
 //     getBulb.src = "./assets/bul-off.jpg";
@@ -109,54 +109,126 @@ _____________________ Answer ________________________________________ */
 // }
 
 
-/*___________________________ Question no 1 ________________________
+/*___________________________ Question no 11 ________________________
+const user = {
+  name: 'Ali',
+  address: {
+    city: 'Lahore',
+    geo: {
+      lat: '31.5204',
+      lng: '74.3587'
+    }
+  }
+};
+👉 Access user.address.geo.lat and user.address.geo.altitude using optional chaining.
+
 
 _____________________ Answer ________________________________________ */
+// const user = {name : 'Ali',
+//     address : {city : 'Lahore',
+//         geo : {lat : '31.528',
+//             lng : '74.345'
+//         }
+//     }
+// };
+// console.log(user?.address?.geo?.lat);
+// console.log(user?.address?.geo?.altitude)
 
+/*___________________________ Question no 12 ________________________
+const student = {
+  name: 'Sara',
+  getDetails() {
+    return `${this.name} is a student`;
+  }
+};
+👉 Use optional chaining to call student.getDetails() and
+ student.profile.getName() safely.
+_____________________ Answer ________________________________________ */
+// const student = {
+//   name: 'Sara',
+//   getDetails() {
+//     return `${this.name} is a student`;
+//   }
+// };
+// console.log(student.getDetails());
+// console.log(student?.profile?.getName());
 
+/*___________________________ Question no 13 ________________________
+const books = [
+  { title: 'JavaScript Basics' },
+  null,
+  { title: 'CSS Mastery' }
+];
+👉 Loop through the array and print the title of each book using optional chaining.
+_____________________ Answer ________________________________________ */
+// const books = [{title : 'javaScript Basis'},
+//     null,{title : 'css Matery'}
+// ];
+// for(let i = 0; i<books.length; i++){console.log(books[i]?.title)}
+/*___________________________ Question no 14 ________________________
+const employee = {
+  name: 'Ahmed',
+  job: {
+    title: 'Developer'
+  }
+};
+👉 Use optional chaining and nullish coalescing (??) to get employee.job.salary or 
+"Not defined".
+_____________________ Answer ________________________________________ */
+// const employee = {name : 'Ahmed',job :{titile : 'developer'}}
+// console.log(employee?.job?.salary)
 
-
-
-/*___________________________ Question no 1 ________________________
+/*___________________________ Question no 15 ________________________
+function getUser() {
+  return null;
+}
+👉 Access getUser().name safely using optional chaining.
 
 _____________________ Answer ________________________________________ */
+// function getUser(){return null;}
+// console.log(getUser()?.name)
+/*___________________________ Question no 16 ________________________
+ Clone an Array
+Question:
+You have the following array:
 
+let fruits = ["apple", "banana", "mango"];
+Create a new array called allFruits that contains the same elements using the 
+spread operator.
+👉 Make sure changes to allFruits do not affect fruits.
+_____________________ Answer ________________________________________ */
+// let fruits = ['apple','banana','mango'];
+// console.log(fruits);
+// let allFruits = [...fruits];
+// console.log(allFruits);
+/*___________________________ Question no 17 ________________________
+Merge Two Arrays
+Question:
+Given two arrays:
+let boys = ["Ali", "Zain"];
+let girls = ["Ayesha", "Fatima"];
+Create a single array called students using the spread operator that contains all 
+names.
+_____________________ Answer ________________________________________ */
+// let boys = ['Ali','Zain'];
+// let girls = ['Ayesha','Fatima'];
+// // let students = boys.concat(girls);
+// let students = [...boys,...girls];
+// console.log(students)
+/*___________________________ Question no 18 ________________________
+Add an Element to the Beginning and End
+Question:
+You have this array:
 
-
-
-
-/*___________________________ Question no 1 ________________________
+let languages = ["HTML", "CSS"];
+Using the spread operator, create a new array that adds "JavaScript" at the end
+ and "C" at the start.
+👉 Do not use push() or unshift().
 
 _____________________ Answer ________________________________________ */
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
+// let languages = ['html','css'];
+// let lan = ['c',...languages,'Javascript']
+// console.log(lan);
 
 /*___________________________ Question no 1 ________________________
 
