@@ -230,43 +230,79 @@ _____________________ Answer ________________________________________ */
 // let lan = ['c',...languages,'Javascript']
 // console.log(lan);
 
-/*___________________________ Question no 1 ________________________
+/*___________________________ Question no 19 ________________________
+Copy an Object and Add a Property
+Question:
+You have this object:
+let person = { name: "Aziz", age: 22 };
+Using the spread operator, create a new object called personDetail and add a new
+property country: "Pakistan".
 
 _____________________ Answer ________________________________________ */
+// let person = {name : 'Aziz',
+//     age : 22
+// }
 
+// let personDetail = {...person, country : 'pakistan '};
+// console.log(person);
+// console.log(personDetail);
+/*___________________________ Question no 20 ________________________
+let obj1 = { a: 1, b: 2 };
+let obj2 = { c: 3, d: 4 };
+Use the spread operator to create a new object that contains properties from both 
+obj1 and obj2.
+_____________________ Answer ________________________________________ */
+// let obj1 = {a : 1,
+//     b : 2
+// }
+// let obj2 = {c : 3,
+//     d : 4
+// }
+// let objec = {...obj1,...obj2};
+// console.log(objec);
+/*___________________________ Question no 21 ________________________
+Update a Value While Copying an Object
+Question:
+You have:
 
-
-
-
-/*___________________________ Question no 1 ________________________
+let book = { title: "JS Basics", pages: 200 };
+Create a new object updatedBook using the spread operator, but update 
+the pages to 300.
 
 _____________________ Answer ________________________________________ */
+// let book = {title : 'js basics',pages : 200}
+// let updatedBook = {...book,pages: 300};
+// console.log(updatedBook);
 
+/*___________________________ Question no 22 ________________________
+Remove a Value While Copying an Object
+Question:
 
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-
-
-/*___________________________ Question no 1 ________________________
-
-_____________________ Answer ________________________________________ */
-
-
-
-
-
-/*___________________________ Question no 1 ________________________
+let user = { name: "Ali", age: 25, email: "ali@example.com" };
+Create a copy of user without the email property using spread operator and 
+destructuring.
 
 _____________________ Answer ________________________________________ */
+// let user = {name :'Ali',
+//     age : 32,
+//     email : 'ali@example.com'
+// };
+// let newObject = {...user};
+// console.log(newObject);
+// delete newObject.email;
+// console.log(newObject)
 
-
-
-
+/*___________________________ Question no 23 ________________________
+ Flatten a Nested Array
+Question:
+let nested = [1, 2, [3, 4], 5];
+Use the spread operator to create a flat array:
+👉 Result: [1, 2, 3, 4, 5]
+_____________________ Answer ________________________________________ */
+// let nested = [1,2,[3,4],5]
+// console.log(nested);
+// let flat = [...nested,...[3,4]];
+// console.log(flat)
 
 /*___________________________ Question no 1 ________________________
 
